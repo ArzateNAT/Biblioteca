@@ -16,16 +16,14 @@
     </style>
 
     <style name="txt" parent="@style/welcomeTitle">
-        <item name="android:layout_margin">5dp</item>
-
+        <item name="textAlignment">center</item>
     </style>
 
     <style name="btn_consult">
-
         <item name="android:background">#000</item>
         <item name="android:textColor">#ffffff</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_below">@+id/linearLayout2</item>
     </style>
 
     <style name="btn_delete" parent="@style/btn_consult">

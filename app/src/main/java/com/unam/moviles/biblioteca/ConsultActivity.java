@@ -84,7 +84,7 @@ public class ConsultActivity extends AppCompatActivity implements View.OnClickLi
         String title,author;
         int id_book = 0;
 
-        id_book = (int) sp_id.getSelectedItemId() + 1;
+        id_book = (int)sp_id.getSelectedItemId();
 
         SqliteHelper db = new SqliteHelper(this);
 
@@ -95,12 +95,11 @@ public class ConsultActivity extends AppCompatActivity implements View.OnClickLi
             txt_title.setText("");
             txt_author.setText("");
         }
-
         else
         {
             txt_title.setText(result_book.getTitle());
             txt_author.setText(result_book.getAuthor());
-            Log.d("result_consultAnimal",String.valueOf(result_book));
+            //Log.d("result_consultAnimal",String.valueOf(result_book));
         }
     }
 
