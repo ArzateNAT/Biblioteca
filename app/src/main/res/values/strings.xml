@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Biblioteca UNAM</string>
+    <string name="welcomeText">Bienvenido a la aplicación gestora de la biblioteca</string>
+    <string name="app_id">ID</string>
+    <string name="app_title">Título</string>
+    <string name="app_author">Autor</string>
+    <string name="app_delete">Eliminar</string>
+    <string name="app_consult">Consultar</string>
+    <string name="app_newId">Nuevo ID</string>
+    <string name="app_newTitle">Nuevo Título</string>
+    <string name="app_newAuthor">Nuevo Autor</string>
+    <string name="app_cancel">Cancelar</string>
+    <string name="app_update">Actualizar</string>
+</resources>

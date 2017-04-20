@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Inicio"
+        android:id="@+id/itmHome"/>
+
+    <item android:title="Consultar Libro"
+        android:id="@+id/itmConsult"/>
+
+
+    <item android:title="Eliminar Libro"
+        android:id="@+id/itmDelete" />
+
+
+    <item android:title="Actualizar Libro"
+        android:id="@+id/itmUpdate"/>
+
+    <item android:title="Agregar Libro"
+        android:id="@+id/itmAdd"/>
+
+</menu>

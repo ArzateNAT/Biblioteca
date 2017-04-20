@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.unam.moviles.biblioteca.AddActivity">
+
+    <LinearLayout
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="@string/app_id"
+            android:textSize="30dp" />
+
+        <Spinner
+            android:id="@+id/sp_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></Spinner>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/id"
+        style="@style/txt"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="@string/app_title"
+            android:textSize="30dp"
+            style="@style/txt"/>
+
+
+
+        <EditText
+            android:id="@+id/edt_agregarTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="58.70" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/autor"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/titulo"
+        style="@style/txt"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="@string/app_author"
+            style="@style/txt"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/edt_agregarAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autor"
+        android:layout_centerHorizontal="true"
+        android:text="Agregar"
+        style="@style/btn_add"/>
+</RelativeLayout>
