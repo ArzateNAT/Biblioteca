@@ -46,7 +46,6 @@ public class SqliteHelper extends SQLiteOpenHelper {
     public Book consultBook(int id_book)
     {
         Book result_book = null;
-
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(TABLE_BOOKS,
@@ -57,7 +56,6 @@ public class SqliteHelper extends SQLiteOpenHelper {
                 null,
                 null,
                 null);
-
 
         if (cursor!= null)
         {
@@ -75,8 +73,16 @@ public class SqliteHelper extends SQLiteOpenHelper {
         return  result_book;
     }
 
+    public long deleteBook(int id)
+    {
+        long result = 0;
+        SQLiteDatabase db = this.getWritableDatabase();
 
-
+        //db.execSQL("delete from " + TABLE_BOOKS + " where id='" + id + "'");
+        result = db.delete(TABLE_BOOKS, "id=?", new String[]{Integer.toString(id)});
+        db.close();
+        return result;
+    }
 
     public SqliteHelper(Context context)
     {

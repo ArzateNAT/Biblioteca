@@ -29,7 +29,6 @@ public class DeleteActivity extends AppCompatActivity implements AdapterView.OnI
 
         Array = new int [20];
 
-
         sp_id = (Spinner) findViewById(R.id.sp_id);
         list_id_sp = new ArrayList<String>();
 
@@ -57,10 +56,7 @@ public class DeleteActivity extends AppCompatActivity implements AdapterView.OnI
         list_id_sp.add("20");
 
         data_id_sp = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, list_id_sp);
-
-
         data_id_sp.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
 
         sp_id.setAdapter(data_id_sp);
         sp_id.setOnItemSelectedListener(this);
@@ -98,8 +94,6 @@ public class DeleteActivity extends AppCompatActivity implements AdapterView.OnI
                 Intent fourth_intent = new Intent(this,AddActivity.class);
                 startActivity(fourth_intent);
                 break;
-
-
         }
         return true;
     }

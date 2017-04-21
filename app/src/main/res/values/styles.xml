@@ -16,7 +16,7 @@
     </style>
 
     <style name="txt" parent="@style/welcomeTitle">
-        <item name="textAlignment">center</item>
+        <item name="android:textAlignment">center</item>
     </style>
 
     <style name="btn_consult">

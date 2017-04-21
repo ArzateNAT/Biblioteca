@@ -161,16 +161,11 @@ public class AddActivity extends AppCompatActivity implements AdapterView.OnItem
         }
 
         Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
-
-
-
-
     }
 
     private void clean()
     {
         title_et.setText("");
         author_et.setText("");
-
     }
 }
